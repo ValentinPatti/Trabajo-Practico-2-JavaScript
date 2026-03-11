@@ -9,4 +9,34 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 mensaje “Introduce un número válido".
 */
 
-const nota = parseInt(prompt('Ingrese la nota'))
+let nota = parseFloat(prompt('Ingrese la nota'))
+
+while (nota >= 0 || nota <= 10) {
+    switch (true) {
+    case nota >= 0 && nota <= 2:
+        alert('Muy deficiente')
+        break;
+    case nota >= 3 && nota <= 4:
+        alert('Insuficiente')
+        break;
+    case nota >= 5 && nota <= 6:
+        alert('Suficiente')
+        break;
+    case nota >= 7 && nota < 8:
+        alert('Bien')
+        break;
+    case nota >= 8 && nota <= 9:
+        alert('Notable')
+        break;
+    case nota === 10:
+        alert('Sobresaliente')
+        break;
+    default:
+        alert('numero erroneo')
+        break;
+}
+
+nota = parseFloat(prompt('Ingrese la nota'))
+}
+
+alert('ingrese un número valido')
