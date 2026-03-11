@@ -9,3 +9,4 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 mensaje “Introduce un número válido".
 */
 
+const nota = parseInt(prompt('Ingrese la nota'))
